@@ -1,9 +1,8 @@
-lab06_1: client.o
+lab06_1: lab06_2
 	gcc -o client client.o
 	gcc -o server server.o
-client.o: client.c
+lab06_2: client.c
 	gcc -c client.c	
-server.o: server.c
 	gcc -c server.c
 clean:
 	rm *.o client
